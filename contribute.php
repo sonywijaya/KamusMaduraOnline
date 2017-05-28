@@ -1,6 +1,6 @@
 <?php
 include "translator.html";
-$connection = mysqli_connect("mysql13.000webhost.com", "a6190757_admin", "Sonyaja1","a6190757_dict");
+$connection = mysqli_connect("mysql13.000webhost.com", user, password, name);
 if (mysqli_connect_errno()) {
     printf("Connect failed: %s\n", mysqli_connect_error());
     exit();
