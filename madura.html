@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+    <title>Discover Madura</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-type" content"text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="css/madurastyles.css"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+</head>
+
+<body>
+<div id="cssmenu" class='align-right'>
+    <ul>
+        <li><a href='contribute.html'><span>Contribute</span></a></li>
+        <li class='active last'><a href='madura.html'><span>Discover Madura</span></a></li>
+        <li><a href='index.html'><span>Home</span></a></li>
+    </ul>
+</div>
+
+<div style="padding-bottom: 30px">
+    <h1 class="title">Discover Madura</h1>
+
+    <div id="cbp-fwslider" class="cbp-fwslider">
+        <ul>
+            <li><a href="https://www.instagram.com/p/-jJjR9vCol/"><img src="images/1.jpg" alt="img01"/></a></li>
+            <li><a href="https://www.instagram.com/p/-bOS-Diaih/"><img src="images/2.jpg" alt="img02"/></a></li>
+            <li><a href="https://www.instagram.com/p/-kzX-SHBfJ/"><img src="images/3.jpg" alt="img03"/></a></li>
+            <li><a href="https://www.instagram.com/p/-NynLThhC9/"><img src="images/4.jpg" alt="img04"/></a></li>
+            <li><a href="https://www.instagram.com/p/-ahAFATQtR/"><img src="images/5.jpg" alt="img05"/></a></li>
+        </ul>
+    </div>
+</div>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/jquery.cbpFWSlider.min.js"></script>
+<script>
+    $( function() {
+        /*
+         - how to call the plugin:
+         $( selector ).cbpFWSlider( [options] );
+         - options:
+         {
+         // default transition speed (ms)
+         speed : 500,
+         // default transition easing
+         easing : 'ease'
+         }
+         - destroy:
+         $( selector ).cbpFWSlider( 'destroy' );
+         */
+
+        $( '#cbp-fwslider' ).cbpFWSlider();
+
+    } );
+</script>
+
+<script language="javascript">
+    function autoResizeDiv()
+    {
+        document.getElementById('main').style.height = window.innerHeight +'px';
+    }
+    window.onresize = autoResizeDiv;
+    autoResizeDiv();
+</script>
+
+</body>
+</html>

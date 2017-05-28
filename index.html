@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+	<title>Madurese Online Dictionary</title>
+	<meta charset="utf-8"/>
+	<meta http-equiv="Content-type" content"text/html; charset=utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+
+<div id="cssmenu" class='align-right'>
+	<ul>
+		<li><a href='contribute.html'><span>Contribute</span></a></li>
+		<li><a href='madura.html'><span>Discover Madura</span></a></li>
+		<li class='active last'><a href='index.html'><span>Home</span></a></li>
+	</ul>
+</div>
+
+<h1 class="title">Madurese Online Dictionary</h1>
+<p class="subtitle">Want to find out your words in Madurese?</p>
+<p class="subtitle">Want to know Madurese words in your language?</p>
+
+<div class="box">
+	<h2 style="font-size: 36px; color: white; text-align: center; padding-top: 60px;" >Just type it.</h2>
+	<form action="translator.php" method="get" style="padding-top: 50px">
+		<div class="form_wrapper">
+			<input class="form" name="name" type="text" style="width: 400px"/>
+			<select class="dropdown" name="languages">
+				<option value='' selected="selected" disabled="disabled">Select language</option>
+				<option value="1">English to Madura</option>
+				<option value="2">Indonesia to Madura</option>
+				<option value="3">Madura to English</option>
+				<option value="4">Madura to Indonesia</option>
+			</select>
+			<input class="button" type="button" name="SubmitButton" value="Translate!" onClick="ValidateForm(this.form)">
+		</div>
+	</form>
+</div>
+
+<div style='position: fixed; bottom: 0; width: 100%; padding-bottom: 30px'>
+	<p style='font-size: 17px; padding-bottom: 20px; text-align: center; color: #FFFFFF; font-size: 16px'>
+	Copyright &copy; 2015 by Sony Surya Wijaya</p>
+</div>
+
+<script LANGUAGE="JavaScript">
+	<!--
+	function ValidateForm(form){
+		if ( form.languages.selectedIndex == 0 ) {
+			alert ( "Please select language!" );
+			return false;
+		}
+		else {
+			form.submit()
+		}
+	}
+	-->
+</script>
+
+<script language="javascript">
+	function autoResizeDiv()
+	{
+		document.getElementById('main').style.height = window.innerHeight +'px';
+	}
+	window.onresize = autoResizeDiv;
+	autoResizeDiv();
+</script>
+
+</body>
+</html>

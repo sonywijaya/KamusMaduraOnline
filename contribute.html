@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+    <title>Contribute</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-type" content"text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+    <link rel="stylesheet" type="text/css" href="css/form.css"/>
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+<div id="cssmenu" class='align-right'>
+    <ul>
+        <li class='active last'><a href='contribute.html'><span>Contribute</span></a></li>
+        <li><a href='madura.html'><span>Discover Madura</span></a></li>
+        <li><a href='index.html'><span>Home</span></a></li>
+    </ul>
+</div>
+
+<div style='padding-top: 50px; min-height: 700px'>
+    <div class="form-style-5">
+        <form action="contribute.php" method="post">
+            <fieldset>
+                <legend><span class="number">1</span>Contribution</legend>
+                <input type="text" name="word1" placeholder="First language word *">
+                <input type="text" name="word2" placeholder="Second language word *">
+                <label>Language</label>
+                <select class="dropdown" name="languages">
+                    <option value='' selected="selected" disabled="disabled">Select language *</option>
+                    <option value="1">English to Madura</option>
+                    <option value="2">Indonesia to Madura</option>
+                    <option value="3">Madura to English</option>
+                    <option value="4">Madura to Indonesia</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend><span class="number">2</span>Feedback</legend>
+                <textarea name="feedback" placeholder="Feedback for this online dictionary"></textarea>
+            </fieldset>
+            <input type="button" name="SubmitButton" value="Send" onClick="ValidateForm(this.form)">
+        </form>
+    </div>
+</div>
+
+<div style='position: fixed; bottom: 0; width: 100%; padding-bottom: 20px'>
+    <p style='font-size: 17px; padding-bottom: 10px; text-align: center; color: #FFFFFF; font-size: 16px'>
+        Copyright &copy; 2015 by Sony Surya Wijaya</p>
+</div>
+
+<script LANGUAGE="JavaScript">
+    <!--
+    function ValidateForm(form){
+        if ( form.languages.selectedIndex == 0 ) {
+            alert ( "Please select langages!" );
+            return false;
+        }
+        else {
+            form.submit()
+        }
+    }
+    -->
+</script>
+
+<script language="javascript">
+    function autoResizeDiv()
+    {
+        document.getElementById('main').style.height = window.innerHeight +'px';
+    }
+    window.onresize = autoResizeDiv;
+    autoResizeDiv();
+</script>
+
+</body>
+</html>
